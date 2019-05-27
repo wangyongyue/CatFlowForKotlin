@@ -69,7 +69,6 @@ class RUserViewHolder(viewItem: View) : RHolder(viewItem){
 
     val textView: TextView = viewItem.findViewById(R.id.text)
 
-
     override fun setData(item: Cat){
 
         if (item is UserData){
@@ -77,10 +76,19 @@ class RUserViewHolder(viewItem: View) : RHolder(viewItem){
             var model = item as? UserData
             textView.setText(model?.name)
 
-            model?.eventdentifier = 0
+            model?.eventdentifier = 1
+
+
+            textView.setOnClickListener {
+
+                v_selectOb.v_on?.invoke()
+
+            }
 
         }
 
     }
 
 }
+
+

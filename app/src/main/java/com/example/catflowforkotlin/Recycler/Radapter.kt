@@ -39,11 +39,12 @@ class Radapter(var mapHolder : Map<Int,String>) : RecyclerView.Adapter<RHolder>(
 
     override fun onBindViewHolder(holder: RHolder, position: Int) {
         holder.setData(items[position])
-        holder.itemView.setOnClickListener {
+        holder.v_selectOb.v_on {
 
             indexBlock?.invoke(position)
             obIndex?.v_index?.invoke(position)
         }
+
     }
 
     fun v_didSelect(ob:IndexBlock){
