@@ -1,8 +1,8 @@
 package com.example.catflow
 
-class User {
+public class UserABC {
 
-    fun add(){
+   public fun add(){
 
     }
 }
