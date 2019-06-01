@@ -10,7 +10,6 @@ class Main2Activity : CActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
 
-
     }
 }
 
